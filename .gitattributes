@@ -1,0 +1,3 @@
+test/* linguist-detectable=false
+scripts/* linguist-detectable=false
+docs/* linguist-documentation=true

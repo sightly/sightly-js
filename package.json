@@ -1,0 +1,53 @@
+{
+  "name": "sightly",
+  "version": "0.0.0",
+  "description": "Node.js logger for Sightly",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test-server": "node test/server.js",
+    "test": "node ./scripts/rmdir.js && echo \"Building from source...\" &&./node_modules/typescript/bin/tsc && node scripts/configurate.js dev && ./node_modules/mocha/bin/mocha ./test/index.spec.js --bail",
+    "prepublish": "npm run build-prod",
+    "docs": "./node_modules/typedoc/bin/typedoc --out docs src",
+    "build-prod": "npm run docs && node ./scripts/rmdir.js && echo \"Building from source...\" &&./node_modules/typescript/bin/tsc && node scripts/configurate.js prod",
+    "build-dev": "npm run docs && node ./scripts/rmdir.js && echo \"Building from source...\" &&./node_modules/typescript/bin/tsc && node scripts/configurate.js dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sightly/sightly-js.git"
+  },
+  "keywords": [
+    "sightly",
+    "logger",
+    "cloud",
+    "js",
+    "ts",
+    "typescript",
+    "javascript",
+    "sdk"
+  ],
+  "author": "Ramtin Soltani <info@sightly.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sightly/sightly-js/issues"
+  },
+  "homepage": "https://github.com/sightly/sightly-js#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.11",
+    "@types/request": "^2.48.3",
+    "@types/socket.io": "^2.1.4",
+    "@types/socket.io-client": "^1.4.32",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2",
+    "socket.io": "^2.3.0",
+    "typedoc": "^0.15.3",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "request": "^2.88.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
