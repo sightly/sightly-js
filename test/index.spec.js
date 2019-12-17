@@ -1,5 +1,3 @@
-const chai = require('chai');
-const expect = chai.expect;
 const request = require('request');
 const path = require('path');
 const config = require(path.resolve(__dirname, '..', 'dist', 'config.json'));
@@ -29,17 +27,17 @@ describe('Sightly', function() {
 
 });
 
-// // Kill the server
-// after(function(done) {
-//
-//   setTimeout(() => {
-//
-//     request.post(config.logsServerHost + '/kill', () => {
-//
-//       done();
-//
-//     });
-//
-//   }, 1000);
-//
-// });
+// Kill the server
+after(function(done) {
+
+  setTimeout(() => {
+
+    request.post(config.logsServerHost + '/kill', () => {
+
+      done();
+
+    });
+
+  }, 1000);
+
+});

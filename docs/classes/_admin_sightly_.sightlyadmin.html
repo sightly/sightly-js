@@ -102,7 +102,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_admin_sightly_.sightlyadmin.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_admin_sightly_.sightlyadmin.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_admin_sightly_.sightlyadmin.html#reconnect" class="tsd-kind-icon">reconnect</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,7 +123,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_client_sightly_.sightlyclient.html">SightlyClient</a>.<a href="_client_sightly_.sightlyclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in admin/sightly.ts:5</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/admin/sightly.ts#L5">admin/sightly.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -144,7 +146,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_client_sightly_.sightlyclient.html">SightlyClient</a>.<a href="_client_sightly_.sightlyclient.html#_core">_core</a></p>
 						<ul>
-							<li>Defined in client/sightly.ts:7</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/client/sightly.ts#L7">client/sightly.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,13 +157,47 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_client_sightly_.sightlyclient.html">SightlyClient</a>.<a href="_client_sightly_.sightlyclient.html#_token">_token</a></p>
 						<ul>
-							<li>Defined in client/sightly.ts:8</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/client/sightly.ts#L8">client/sightly.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_client_sightly_.sightlyclient.html">SightlyClient</a>.<a href="_client_sightly_.sightlyclient.html#close">close</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/client/sightly.ts#L53">client/sightly.ts:53</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Closes the connection to the server when all remaining logs are sent
+									(e.g. if connection is temporarily dropped, the client tries to reconnect. Meanwhile, all unsent and new logs are cached in the background, waiting for the connection to be re-established).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If true, the connection will be closed regardless of the cached logs.
+										<strong>WARNING: Using this flag might result in losing unsent logs!</strong></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3>logger</h3>
@@ -173,7 +209,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_client_sightly_.sightlyclient.html">SightlyClient</a>.<a href="_client_sightly_.sightlyclient.html#logger">logger</a></p>
 								<ul>
-									<li>Defined in admin/sightly.ts:17</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/admin/sightly.ts#L17">admin/sightly.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -191,6 +227,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_admin_logger_.loggeradmin.html" class="tsd-signature-type">LoggerAdmin</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="reconnect" class="tsd-anchor"></a>
+					<h3>reconnect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">reconnect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_client_sightly_.sightlyclient.html">SightlyClient</a>.<a href="_client_sightly_.sightlyclient.html#reconnect">reconnect</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/client/sightly.ts#L41">client/sightly.ts:41</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reconnects to the server if connection is closed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -259,8 +318,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_admin_sightly_.sightlyadmin.html#_token" class="tsd-kind-icon">_token</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_admin_sightly_.sightlyadmin.html#close" class="tsd-kind-icon">close</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_admin_sightly_.sightlyadmin.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_admin_sightly_.sightlyadmin.html#reconnect" class="tsd-kind-icon">reconnect</a>
 							</li>
 						</ul>
 					</li>

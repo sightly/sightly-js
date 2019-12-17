@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LoggerOptions | sightly</title>
+	<title>QueueListeners | sightly</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -62,10 +62,10 @@
 					<a href="../modules/_common_types_.sightly.html">Sightly</a>
 				</li>
 				<li>
-					<a href="_common_types_.sightly.loggeroptions.html">LoggerOptions</a>
+					<a href="_common_types_.sightly.queuelisteners.html">QueueListeners</a>
 				</li>
 			</ul>
-			<h1>Interface LoggerOptions</h1>
+			<h1>Interface QueueListeners</h1>
 		</div>
 	</div>
 </header>
@@ -76,125 +76,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LoggerOptions</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_common_types_.sightly.loggeroptionsextended.html" class="tsd-signature-type">LoggerOptionsExtended</a>
-							</li>
-						</ul>
+						<span class="target">QueueListeners</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_common_types_.sightly.loggeroptions.html#captureerrors" class="tsd-kind-icon">capture<wbr>Errors</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_common_types_.sightly.loggeroptions.html#channel" class="tsd-kind-icon">channel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_common_types_.sightly.loggeroptions.html#colorfulconsolelogs" class="tsd-kind-icon">colorful<wbr>Console<wbr>Logs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_common_types_.sightly.loggeroptions.html#consolelogs" class="tsd-kind-icon">console<wbr>Logs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_common_types_.sightly.loggeroptions.html#queuesize" class="tsd-kind-icon">queue<wbr>Size</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_common_types_.sightly.loggeroptions.html#structuredconsolelogs" class="tsd-kind-icon">structured<wbr>Console<wbr>Logs</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="captureerrors" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> capture<wbr>Errors</h3>
-					<div class="tsd-signature tsd-kind-icon">capture<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/types.ts#L12">common/types.ts:12</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether to capture errors logged by console.error or not (defaults to false).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="channel" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> channel</h3>
-					<div class="tsd-signature tsd-kind-icon">channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/types.ts#L8">common/types.ts:8</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The log channel (defaults to &#39;default&#39;).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="colorfulconsolelogs" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> colorful<wbr>Console<wbr>Logs</h3>
-					<div class="tsd-signature tsd-kind-icon">colorful<wbr>Console<wbr>Logs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/types.ts#L16">common/types.ts:16</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Determines if logs should be logged to console with color (defaults to true).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="consolelogs" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> console<wbr>Logs</h3>
-					<div class="tsd-signature tsd-kind-icon">console<wbr>Logs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/types.ts#L14">common/types.ts:14</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether to log to console or not (defaults to true).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="queuesize" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> queue<wbr>Size</h3>
-					<div class="tsd-signature tsd-kind-icon">queue<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/types.ts#L10">common/types.ts:10</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The maximum number of logs to queue when connection to server is lost (defaults to Infinity).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="structuredconsolelogs" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> structured<wbr>Console<wbr>Logs</h3>
-					<div class="tsd-signature tsd-kind-icon">structured<wbr>Console<wbr>Logs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/types.ts#L18">common/types.ts:18</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Determines if console logs should be structured and contain metadata (defaults to true).</p>
-						</div>
-					</div>
-				</section>
+			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-module">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span></div>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -263,39 +151,19 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_common_types_.sightly.logobject.html" class="tsd-kind-icon">Log<wbr>Object</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_common_types_.sightly.loggeroptions.html" class="tsd-kind-icon">Logger<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_common_types_.sightly.loggeroptions.html#captureerrors" class="tsd-kind-icon">capture<wbr>Errors</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_common_types_.sightly.loggeroptions.html#channel" class="tsd-kind-icon">channel</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_common_types_.sightly.loggeroptions.html#colorfulconsolelogs" class="tsd-kind-icon">colorful<wbr>Console<wbr>Logs</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_common_types_.sightly.loggeroptions.html#consolelogs" class="tsd-kind-icon">console<wbr>Logs</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_common_types_.sightly.loggeroptions.html#queuesize" class="tsd-kind-icon">queue<wbr>Size</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_common_types_.sightly.loggeroptions.html#structuredconsolelogs" class="tsd-kind-icon">structured<wbr>Console<wbr>Logs</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_common_types_.sightly.loggeroptionsextended.html" class="tsd-kind-icon">Logger<wbr>Options<wbr>Extended</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="_common_types_.sightly.queuelisteners.html" class="tsd-kind-icon">Queue<wbr>Listeners</a>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_common_types_.sightly.queueregistry.html" class="tsd-kind-icon">Queue<wbr>Registry</a>
 					</li>

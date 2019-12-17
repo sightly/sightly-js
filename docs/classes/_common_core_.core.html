@@ -93,6 +93,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_common_core_.core.html#_errorlisteners" class="tsd-kind-icon">_error<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_common_core_.core.html#_loglisteners" class="tsd-kind-icon">_log<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_common_core_.core.html#_originalconsoleerror" class="tsd-kind-icon">_original<wbr>Console<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_common_core_.core.html#_queues" class="tsd-kind-icon">_queues</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_common_core_.core.html#_sockets" class="tsd-kind-icon">_sockets</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_common_core_.core.html#_instance" class="tsd-kind-icon">_instance</a></li>
 							</ul>
@@ -100,7 +101,6 @@
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_common_core_.core.html#originalconsoleerror" class="tsd-kind-icon">original<wbr>Console<wbr>Error</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="_common_core_.core.html#instance" class="tsd-kind-icon">instance</a></li>
 							</ul>
 						</section>
@@ -108,9 +108,12 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#getlogssocket" class="tsd-kind-icon">get<wbr>Logs<wbr>Socket</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#logtoconsole" class="tsd-kind-icon">log<wbr>ToConsole</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#logsconnect" class="tsd-kind-icon">logs<wbr>Connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#logsdisconnect" class="tsd-kind-icon">logs<wbr>Disconnect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#onconsoleerror" class="tsd-kind-icon">on<wbr>Console<wbr>Error</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#registerloglistener" class="tsd-kind-icon">register<wbr>Log<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#registerqueue" class="tsd-kind-icon">register<wbr>Queue</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_common_core_.core.html#unregisterloglistener" class="tsd-kind-icon">unregister<wbr>Log<wbr>Listener</a></li>
 							</ul>
 						</section>
@@ -129,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:11</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L14">common/core.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -150,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">_error<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in common/core.ts:10</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L13">common/core.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">_log<wbr>Listeners<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_common_types_.sightly.loglisteners.html" class="tsd-signature-type">LogListeners</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in common/core.ts:9</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L12">common/core.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,7 +173,17 @@
 					<div class="tsd-signature tsd-kind-icon">_original<wbr>Console<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol"> =&nbsp;console.error</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in common/core.ts:11</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L14">common/core.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_queues" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _queues</h3>
+					<div class="tsd-signature tsd-kind-icon">_queues<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_common_types_.sightly.queueregistry.html" class="tsd-signature-type">QueueRegistry</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L11">common/core.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">_sockets<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_common_types_.sightly.socketregistry.html" class="tsd-signature-type">SocketRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in common/core.ts:8</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L10">common/core.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,35 +203,13 @@
 					<div class="tsd-signature tsd-kind-icon">_instance<span class="tsd-signature-symbol">:</span> <a href="_common_core_.core.html" class="tsd-signature-type">Core</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in common/core.ts:7</li>
+							<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L9">common/core.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="originalconsoleerror" class="tsd-anchor"></a>
-					<h3>original<wbr>Console<wbr>Error</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> originalConsoleError<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in common/core.ts:159</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a reference to the original console.error.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
 					<a name="instance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> instance</h3>
@@ -229,7 +220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:35</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L38">common/core.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_common_core_.core.html" class="tsd-signature-type">Core</a></h4>
@@ -249,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:110</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L202">common/core.ts:202</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -271,6 +262,61 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="logtoconsole" class="tsd-anchor"></a>
+					<h3>log<wbr>ToConsole</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">log<wbr>ToConsole<span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, logs<span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_.sightly.html#log" class="tsd-signature-type">Log</a><span class="tsd-signature-symbol">[]</span>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, structured<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, colorful<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L269">common/core.ts:269</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Logs to console.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>time: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The log&#39;s timestamp.</p>
+									</div>
+								</li>
+								<li>
+									<h5>logs: <a href="../modules/_common_types_.sightly.html#log" class="tsd-signature-type">Log</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of log messages.</p>
+									</div>
+								</li>
+								<li>
+									<h5>level: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Log level.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> structured: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Structured logs.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> colorful: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Colorful logs.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="logsconnect" class="tsd-anchor"></a>
 					<h3>logs<wbr>Connect</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -280,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:47</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L50">common/core.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -302,6 +348,43 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="logsdisconnect" class="tsd-anchor"></a>
+					<h3>logs<wbr>Disconnect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">logs<wbr>Disconnect<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L127">common/core.ts:127</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Closes a connection to the logs server..</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The connection token.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Whether to close the connection without considering the remaining queued logs.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="onconsoleerror" class="tsd-anchor"></a>
 					<h3>on<wbr>Console<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -311,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:150</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L255">common/core.ts:255</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +425,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:122</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L227">common/core.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -376,6 +459,43 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="registerqueue" class="tsd-anchor"></a>
+					<h3>register<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Queue<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, queue<span class="tsd-signature-symbol">: </span><a href="_common_queue_.logsqueue.html" class="tsd-signature-type">LogsQueue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L213">common/core.ts:213</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers a logs queue (used for waiting on the queue before closing the connection).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The connection token.</p>
+									</div>
+								</li>
+								<li>
+									<h5>queue: <a href="_common_queue_.logsqueue.html" class="tsd-signature-type">LogsQueue</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The logs queue.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="unregisterloglistener" class="tsd-anchor"></a>
 					<h3>unregister<wbr>Log<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -385,7 +505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in common/core.ts:136</li>
+									<li>Defined in <a href="https://github.com/sightly/sightly-js/blob/6f7d798/src/common/core.ts#L241">common/core.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,13 +607,13 @@
 								<a href="_common_core_.core.html#_originalconsoleerror" class="tsd-kind-icon">_original<wbr>Console<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_common_core_.core.html#_queues" class="tsd-kind-icon">_queues</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_common_core_.core.html#_sockets" class="tsd-kind-icon">_sockets</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="_common_core_.core.html#_instance" class="tsd-kind-icon">_instance</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="_common_core_.core.html#originalconsoleerror" class="tsd-kind-icon">original<wbr>Console<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
 								<a href="_common_core_.core.html#instance" class="tsd-kind-icon">instance</a>
@@ -502,13 +622,22 @@
 								<a href="_common_core_.core.html#getlogssocket" class="tsd-kind-icon">get<wbr>Logs<wbr>Socket</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_common_core_.core.html#logtoconsole" class="tsd-kind-icon">log<wbr>ToConsole</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_common_core_.core.html#logsconnect" class="tsd-kind-icon">logs<wbr>Connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_common_core_.core.html#logsdisconnect" class="tsd-kind-icon">logs<wbr>Disconnect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_common_core_.core.html#onconsoleerror" class="tsd-kind-icon">on<wbr>Console<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_common_core_.core.html#registerloglistener" class="tsd-kind-icon">register<wbr>Log<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_common_core_.core.html#registerqueue" class="tsd-kind-icon">register<wbr>Queue</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_common_core_.core.html#unregisterloglistener" class="tsd-kind-icon">unregister<wbr>Log<wbr>Listener</a>

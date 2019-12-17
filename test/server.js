@@ -42,7 +42,7 @@ io
 
   // On log received
   socket.on('log', log => {
-console.log('Got log at level', log.level)
+
     socket.emit('log', log);
 
   });

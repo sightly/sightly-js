@@ -2,6 +2,7 @@
   "logsServerHost": "http://localhost:3000",
   "logsServerSocketPath": "/socket",
   "logsServerSnapshotPath": "/snapshot",
+  "logsServerArchivePath": "/archive",
   "alertsServerUrl": "http://localhost:3000",
   "alertsServerTriggerPath": "/trigger"
 }

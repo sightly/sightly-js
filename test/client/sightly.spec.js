@@ -12,7 +12,7 @@ describe('Client', function() {
 
     const log = client.logger();
 
-    it('should log something...', function(done) {
+    it('should log something...', async function() {
 
       this.timeout(60000);
 
@@ -22,17 +22,15 @@ describe('Client', function() {
       .warn('This is a warning message!')
       .notice('This is a notice; Pay attention!');
 
-      client.close(true).then(() => {
+      await client.close(true);
 
-        client.reconnect();
+      client.reconnect();
 
-        log
-        .tag('ERROR_1')
-        .error('Error has occurred!', new Error('Some error message!'));
+      log
+      .tag('ERROR_1')
+      .error('Error has occurred!', new Error('Some error message!'));
 
-        setTimeout(done, 2000);
-
-      });
+      await client.close();
 
     });
 
